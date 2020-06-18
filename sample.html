@@ -1,0 +1,32 @@
+<html>
+<head>
+<style>
+.button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
+.button1 {background-color: #4CAF50;} /* Green */
+.button2 {background-color: #008CBA;} /* Blue */
+</style>
+</head>
+<body>
+
+<button class="button button2", onclick="myFunction()">Click me</button>
+<script>
+function myFunction() {
+
+fetch('https://autoremotejoaomgcd.appspot.com/sendmessage?key=APA91bEBtfVAHBcQAfyV9EkS45-FIbpuKzxWe9LY3kHM4HCyW8NXkLgDrfxTcVfPErKCtXvFKmI6O1Sl9bCyQtDa8f_pdUeNUPjCM1P6ZLx2goRV1ROFmPOGH7D4EOvRdnm3V7StPMcR&message=hello')
+.then(response => console.log(response ))
+
+}</script>
+</body>
+</html>

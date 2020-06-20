@@ -1,4 +1,8 @@
 <html>
+  <style>
+    .iphone-icon { width:64px; height:64px; background: url(http://www.pngall.com/wp-content/uploads/2016/03/iPhone-PNG.png) no-repeat center center; }
+    .server-icon { width:64px; height:64px; background: url(http://www.pngall.com/wp-content/uploads/2016/03/iPhone-PNG.png) no-repeat center center; }
+  </style>
   <body>
     <script src="https://cdn.jsdelivr.net/npm/mermaid@8.4.0/dist/mermaid.min.js"></script>
     <script>mermaid.initialize({startOnLoad:true});</script>
@@ -9,16 +13,12 @@
       A --> B
       B --> C[Server1]
       B --> D[Server2]
-      Click B "http://www.github.com" "This nis a github link"
-      Click A "www.google.com" "This is a google link"
     </div>
 
     And here is another:
     <div class="mermaid">
       graph TD
-      A[Client] -->|tcp_123| B(Load Balancer)
-      B -->|tcp_456| C[Server1]
-      B -->|tcp_456| D[Server2]
+      Phone(<span class=&quot;iphone-icon&quot;></span> My iPhone)-->(<span class=&quot;server-icon&quot;></span> My Server)
     </div>
   </body>
 </html>
